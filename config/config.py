@@ -1,13 +1,9 @@
 import os
-from dotenv import load_dotenv
+import streamlit as st
 
-load_dotenv()
-
-
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-TAVILY_API_KEY = os.getenv("TAVILY_API_KEY")
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
+GOOGLE_API_KEY = st.secrets["GOOGLE_API_KEY"]
+TAVILY_API_KEY = st.secrets["TAVILY_API_KEY"]
+GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
 
 DEFAULT_MODEL = "gemini-2.5-flash" 
 
