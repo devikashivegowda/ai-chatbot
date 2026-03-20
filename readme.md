@@ -138,4 +138,4 @@ streamlit run app.py
 ## 👩‍💻 Author
 
 Devika S  
-Software Developer | AI & Cybersecurity Enthusiast
+Software Developer | AI  Enthusiast
