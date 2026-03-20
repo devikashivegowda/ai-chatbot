@@ -8,3 +8,4 @@ faiss-cpu
 pypdf
 fpdf
 python-dotenv
+streamlit-cookies-manager

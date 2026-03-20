@@ -1,6 +1,8 @@
+import streamlit as st
 from langchain_google_genai import GoogleGenerativeAIEmbeddings
 from config.config import GOOGLE_API_KEY, EMBEDDING_MODEL_NAME
 
+@st.cache_resource 
 def get_google_embeddings():
     return GoogleGenerativeAIEmbeddings(
         model=EMBEDDING_MODEL_NAME, 
